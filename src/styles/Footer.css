@@ -1,73 +1,108 @@
-/* For devices with a max-width of 1024px (Tablets and smaller) */
-@media (max-width: 1024px) {
-  .footer-card {
-    padding: 15px;
-  }
-
-  .footer-title {
-    font-size: 30px;
-  }
-
-  .footer-price,
-  .discounted-price {
-    font-size: 28px;
-  }
-
-  .footer-description {
-    font-size: 14px;
-  }
-
-  .footer-button {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-
-  .footer-image-container {
-    width: 250px;
-    height: 250px;
-  }
-
-  .footer-image {
-    width: 180px;
-    height: 180px;
-  }
+.footer {
+  background-color: #f0f4ff; /* Light blue background color */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* For devices with a max-width of 480px (Mobile devices) */
-@media (max-width: 480px) {
-  .footer {
-    padding: 30px 10px;
-  }
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff; /* White background for the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+}
 
-  .footer-title {
-    font-size: 24px;
-  }
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
 
-  .footer-price,
-  .discounted-price {
-    font-size: 24px;
-  }
+.footer-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-  .footer-description {
-    font-size: 14px;
-  }
+.footer-price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e74c3c; /* Discounted price in red */
+  margin-bottom: 10px;
+}
 
-  .footer-button {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
+.original-price {
+  text-decoration: line-through;
+  font-size: 18px;
+  color: #999;
+  margin-right: 15px;
+}
 
-  .footer-image-container {
-    width: 200px;
-    height: 200px;
-  }
+.discounted-price {
+  color: #e74c3c;
+  font-size: 32px;
+}
 
-  .footer-image {
-    width: 150px;
-    height: 150px;
+.footer-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.footer-button {
+  background-color: #3498db; /* Blue button */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #2980b9;
+}
+
+.footer-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 
+    0 0 15px 10px rgba(255, 255, 255, 0.7),
+    0 0 30px 15px rgba(255, 255, 255, 0.5);
+}
+
+.footer-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Circular image */
+}
+
+@media (max-width: 768px) {
+  .footer-card {
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-content {
-    padding: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-image-container {
+    margin-bottom: 20px;
   }
 }

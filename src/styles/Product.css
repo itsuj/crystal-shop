@@ -1,80 +1,62 @@
-@media (max-width: 1024px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
-
-  .filters {
+.product-page {
+    padding: 20px;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
   }
-
+  
+  .filters {
+    display: flex;
+    justify-content: flex-start; 
+    margin-bottom: 20px; 
+  }
+  
   .filters label {
-    margin-right: 0;
-    margin-bottom: 10px;
+    margin-right: 10px; /* Space between label and select */
   }
-
+  
   .filters select {
-    margin-right: 0;
-    margin-bottom: 10px;
+    margin-right: 20px; /* Space between select elements */
+    padding: 5px; /* Add some padding */
   }
-
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Responsive grid */
+    gap: 20px; 
+  }
+  
   .product-card {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 10px; 
+    text-align: center; 
+    transition: transform 0.2s; 
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .product-card img {
+    max-width: 100%; /* Responsive image */
+    height: auto; 
+  }
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; 
+  }
+  .button-container button {
+    color: #000;
+    background-color: rgb(234, 226, 226);
+    border-color: white;
     padding: 8px;
+    cursor: pointer;
+    border-radius: 12px;
   }
-
-  .button-container button {
-    padding: 6px;
+  .button-container button:hover {
+    background-color: plum;
+    transition: 0.3ms;
   }
-}
-
-@media (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .filters {
-    align-items: center;
-  }
-
-  .product-card {
-    padding: 6px;
-  }
-
-  .button-container button {
-    padding: 5px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .product-card {
-    padding: 5px;
-  }
-
-  .filters {
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .filters label {
-    margin-right: 5px;
-  }
-
-  .filters select {
-    flex-grow: 1;
-    margin-right: 5px;
-  }
-
-  .button-container button {
-    padding: 5px;
-    font-size: 12px;
-  }
-}
+  
+  
