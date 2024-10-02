@@ -1,62 +1,87 @@
 .product-page {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .filters {
-    display: flex;
-    justify-content: flex-start; 
-    margin-bottom: 20px; 
-  }
-  
-  .filters label {
-    margin-right: 10px; /* Space between label and select */
-  }
-  
-  .filters select {
-    margin-right: 20px; /* Space between select elements */
-    padding: 5px; /* Add some padding */
-  }
-  
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start; 
+  margin-bottom: 20px; 
+}
+
+.filters label {
+  margin-right: 10px; 
+}
+
+.filters select {
+  margin-right: 20px; 
+  padding: 5px; 
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+}
+
+.product-card {
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 10px; 
+  text-align: center; 
+  transition: transform 0.2s; 
+}
+
+.product-card:hover {
+  transform: scale(1.05); 
+}
+
+.product-card img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.button-container button {
+  color: #000;
+  background-color: rgb(234, 226, 226);
+  border-color: white;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button-container button:hover {
+  background-color: plum;
+  transition: 0.3ms;
+}
+
+@media (max-width: 768px) {
   .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Responsive grid */
-    gap: 20px; 
+      grid-template-columns: 1fr; 
   }
-  
-  .product-card {
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    padding: 10px; 
-    text-align: center; 
-    transition: transform 0.2s; 
+
+  .filters {
+      flex-direction: column; 
+      align-items: flex-start; 
   }
-  
-  .product-card:hover {
-    transform: scale(1.05); /* Scale up on hover */
+
+  .filters select {
+      margin-bottom: 10px; 
   }
-  
-  .product-card img {
-    max-width: 100%; /* Responsive image */
-    height: auto; 
-  }
+
   .button-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    margin-top: 20px; 
+      flex-direction: column; 
   }
+
   .button-container button {
-    color: #000;
-    background-color: rgb(234, 226, 226);
-    border-color: white;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 12px;
+      margin: 5px 0; 
+      width: 100%; 
   }
-  .button-container button:hover {
-    background-color: plum;
-    transition: 0.3ms;
-  }
-  
-  
+}

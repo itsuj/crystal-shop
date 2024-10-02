@@ -1,5 +1,5 @@
 .footer {
-  background-color: #f0f4ff; /* Light blue background color */
+  background-color: #f0f4ff;
   padding: 50px 20px;
   display: flex;
   justify-content: center;
@@ -13,8 +13,8 @@
   max-width: 1200px;
   width: 100%;
   padding: 20px;
-  background-color: #fff; /* White background for the card */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
@@ -35,7 +35,7 @@
 .footer-price {
   font-size: 32px;
   font-weight: bold;
-  color: #e74c3c; /* Discounted price in red */
+  color: #e74c3c;
   margin-bottom: 10px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .footer-button {
-  background-color: #3498db; /* Blue button */
+  background-color: #3498db;
   color: #fff;
   padding: 10px 20px;
   font-size: 18px;
@@ -80,15 +80,13 @@
   height: 300px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 
-    0 0 15px 10px rgba(255, 255, 255, 0.7),
-    0 0 30px 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.7), 0 0 30px 15px rgba(255, 255, 255, 0.5);
 }
 
 .footer-image {
   width: 200px;
   height: 200px;
-  border-radius: 50%; /* Circular image */
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
@@ -104,5 +102,32 @@
 
   .footer-image-container {
     margin-bottom: 20px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+  }
+
+  .footer-price {
+    font-size: 24px;
+  }
+
+  .footer-description {
+    font-size: 14px;
+  }
+
+  .footer-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .footer-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer-image {
+    width: 150px;
+    height: 150px;
   }
 }
